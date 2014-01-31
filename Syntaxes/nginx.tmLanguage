@@ -158,7 +158,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>(?&lt;=^|\s|;|{|})(fastcgi_index|fastcgi_hide_header|fastcgi_ignore_client_abort|fastcgi_intercept_errors|fastcgi_param|fastcgi_pass|fastcgi_pass_header|fastcgi_read_timeout|fastcgi_redirect_errors|fa|stcgi_storefastcgi_store_access|fastcgi_buffers|fastcgi_buffers_size|fastcgi_temp_path)\b</string>
+			<string>(?&lt;=^|\s|;|{|})(fastcgi_index|fastcgi_hide_header|fastcgi_ignore_client_abort|fastcgi_intercept_errors|fastcgi_param|fastcgi_pass|fastcgi_pass_header|fastcgi_read_timeout|fastcgi_redirect_errors|fa|stcgi_storefastcgi_store_access|fastcgi_buffers|fastcgi_buffers_size|fastcgi_split_path_info|fastcgi_temp_path)\b</string>
 			<key>name</key>
 			<string>keyword.language.nginx.http.fastcgi</string>
 		</dict>
