@@ -32,19 +32,19 @@
 			<key>match</key>
 			<string>\{|\}</string>
 			<key>name</key>
-			<string>constant.character.brace</string>
+			<string>punctuation.brace</string>
 		</dict>
 		<dict>
 			<key>match</key>
 			<string>\;</string>
 			<key>name</key>
-			<string>constant.character.end</string>
+			<string>punctuation.end</string>
 		</dict>
 		<dict>
 			<key>match</key>
 			<string>\(|\)</string>
 			<key>name</key>
-			<string>constant.character.paren</string>
+			<string>punctuation.paren</string>
 		</dict>
 		<dict>
 			<key>match</key>
