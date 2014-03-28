@@ -59,14 +59,22 @@
 			<string>string.regexp</string>
 		</dict>
 		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.variable.nginx-config</string>
+				</dict>
+			</dict>
 			<key>match</key>
-			<string>\"(.*)\"</string>
+			<string>(\$)[a-zA-Z][0-9a-zA-Z_]*</string>
 			<key>name</key>
-			<string>string.quoted</string>
+			<string>variable.language.nginx-config</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\'(.*)\'</string>
+			<string>(\'|\")(.*)\1</string>
 			<key>name</key>
 			<string>string.quoted</string>
 		</dict>
