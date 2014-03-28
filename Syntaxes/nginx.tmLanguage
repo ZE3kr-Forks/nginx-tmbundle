@@ -24,6 +24,12 @@
 		</dict>
 		<dict>
 			<key>match</key>
+			<string>\b\d+\.\d+\.\d+\.\d+(?::\d+)</string>
+			<key>name</key>
+			<string>constant.numeric.ip</string>
+		</dict>
+		<dict>
+			<key>match</key>
 			<string>[+\-]?[0-9]+[kmgshdmy]?\b</string>
 			<key>name</key>
 			<string>constant.numeric</string>
