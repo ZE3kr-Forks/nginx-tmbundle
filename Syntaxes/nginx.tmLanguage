@@ -240,6 +240,12 @@
 			<key>name</key>
 			<string>keyword.language.nginx.http.userid</string>
 		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(levels|keys_zone|inactive|max_size)\b</string>
+			<key>name</key>
+			<string>support.function.language.nginx</string>
+		</dict>
 	</array>
 	<key>scopeName</key>
 	<string>source.nginx</string>
