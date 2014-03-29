@@ -1,4 +1,4 @@
-h2. Features
+## Features
 
 * Language grammar
 * folding
@@ -6,7 +6,7 @@ h2. Features
 * @log@ tab completion for setting up logs in NCSA combined format (the same
   as Apache's combined log format)
 
-h2. Scopes
+## Scopes
 
 * source.nginx
 
