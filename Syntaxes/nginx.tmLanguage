@@ -65,16 +65,47 @@
 			<string>constant.language.nginx</string>
 		</dict>
 		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.language.nginx</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>string.regexp.rewrite</string>
+				</dict>
+				<key>3</key>
+				<dict>
+					<key>name</key>
+					<string>string</string>
+				</dict>
+			</dict>
 			<key>match</key>
-			<string>(?&lt;=rewrite |rewrite  |rewrite   |rewrite    )\S+</string>
+			<string>(rewrite)\s+(\S+)\s+(\S+)</string>
 			<key>name</key>
-			<string>string.regexp.rewrite</string>
+			<string>language.nginx.rewrite</string>
 		</dict>
 		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.language.nginx</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>string.regexp.location</string>
+				</dict>
+			</dict>
 			<key>match</key>
-			<string>(?&lt;=location |location  |location   |location    )(\~|\~\*|\!\~|\!\~\*)\s*\S+</string>
+			<string>(location)\s+(?:\~|\~\*|\!\~|\!\~\*)\s*(\S+)</string>
 			<key>name</key>
-			<string>string.regexp.location</string>
+			<string>language.nginx.location</string>
 		</dict>
 		<dict>
 			<key>captures</key>
