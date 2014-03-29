@@ -143,12 +143,6 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b\w+://\S+</string>
-			<key>name</key>
-			<string>string.uri</string>
-		</dict>
-		<dict>
-			<key>match</key>
 			<string>\b(events)\b</string>
 			<key>name</key>
 			<string>keyword.language.nginx.events</string>
