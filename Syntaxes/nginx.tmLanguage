@@ -66,9 +66,15 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\\.*\ |\~|\~\*|\!\~|\!\~\*|\^.*?(\$|\s)</string>
+			<string>(?&lt;=rewrite |rewrite  |rewrite   |rewrite    )\S+</string>
 			<key>name</key>
-			<string>string.regexp</string>
+			<string>string.regexp.rewrite</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>(?&lt;=location |location  |location   |location    )(\~|\~\*|\!\~|\!\~\*)\s*\S+</string>
+			<key>name</key>
+			<string>string.regexp.location</string>
 		</dict>
 		<dict>
 			<key>captures</key>
