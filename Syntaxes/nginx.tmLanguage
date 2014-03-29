@@ -108,24 +108,38 @@
 			<string>language.nginx.location</string>
 		</dict>
 		<dict>
-			<key>captures</key>
-			<dict>
-				<key>1</key>
-				<dict>
-					<key>name</key>
-					<string>punctuation.definition.variable.nginx-config</string>
-				</dict>
-			</dict>
-			<key>match</key>
-			<string>(\$)[a-zA-Z][0-9a-zA-Z_]*</string>
-			<key>name</key>
-			<string>variable.language.nginx-config</string>
+			<key>include</key>
+			<string>#variable</string>
 		</dict>
 		<dict>
-			<key>match</key>
-			<string>(\'|\")(.*)\1</string>
+			<key>begin</key>
+			<string>'</string>
+			<key>end</key>
+			<string>'</string>
 			<key>name</key>
 			<string>string.quoted</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>#variable</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>begin</key>
+			<string>"</string>
+			<key>end</key>
+			<string>"</string>
+			<key>name</key>
+			<string>string.quoted</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>#variable</string>
+				</dict>
+			</array>
 		</dict>
 		<dict>
 			<key>match</key>
@@ -302,6 +316,16 @@
 			<string>support.constant.language.nginx</string>
 		</dict>
 	</array>
+	<key>repository</key>
+	<dict>
+		<key>variable</key>
+		<dict>
+			<key>match</key>
+			<string>\$[a-zA-Z][0-9a-zA-Z_]*</string>
+			<key>name</key>
+			<string>variable.language.nginx-config</string>
+		</dict>
+	</dict>
 	<key>scopeName</key>
 	<string>source.nginx</string>
 	<key>uuid</key>
