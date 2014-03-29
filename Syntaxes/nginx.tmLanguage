@@ -104,157 +104,157 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(daemon|env|debug_points|error_log|log_not_found|include|lock_file|master_process|pid|ssl_engine|timer_resolution|user|worker_cpu_affinity|worker_priority|worker_processes|worker_rlimit_core|worker_rlimit_nofile|worker_rlimit_sigpending|working_directory)\b</string>
+			<string>(?&lt;=^|\s|;|{|})(daemon|env|debug_points|error_log|log_not_found|include|lock_file|master_process|pid|ssl_engine|timer_resolution|user|worker_cpu_affinity|worker_priority|worker_processes|worker_rlimit_core|worker_rlimit_nofile|worker_rlimit_sigpending|working_directory)\b</string>
 			<key>name</key>
 			<string>keyword.language.directive.nginx.main</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(accept_mutex|accept_mutex_delay|debug_connection|devpoll_changes|devpoll_events|epoll_events|kqueue_changes|kqueue_events|multi_accept|rtsig_signo|rtsig_overflow_events|rtsig_overflow_test|rtsig_overflow_threshold|use|worker_connections)\b</string>
+			<string>(?&lt;=^|\s|;|{|})(accept_mutex|accept_mutex_delay|debug_connection|devpoll_changes|devpoll_events|epoll_events|kqueue_changes|kqueue_events|multi_accept|rtsig_signo|rtsig_overflow_events|rtsig_overflow_test|rtsig_overflow_threshold|use|worker_connections)\b</string>
 			<key>name</key>
 			<string>keyword.language.directive.nginx.events</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(alias|client_body_in_file_only|client_body_buffer_size|client_body_temp_path|client_body_timeout|client_header_buffer_size|client_header_timeout|client_max_body_size|default_type|error_page|index\s+|internal|keepalive_timeout|large_client_header_buffers|limit_except|limit_rate|listen|location|msie_padding|msie_refresh|optimize_server_names|permanent|port_in_redirect|recursive_error_pages|rewrite|root|satisfy_any|send_timeout|sendfile|server|server_name|server_name_in_redirect|server_names_hash_max_size|server_names_hash_bucket_size|tcp_nodelay|tcp_nopush|types\s+)\b</string>
+			<string>(?&lt;=^|\s|;|{|})(alias|client_body_in_file_only|client_body_buffer_size|client_body_temp_path|client_body_timeout|client_header_buffer_size|client_header_timeout|client_max_body_size|default_type|error_page|index\s+|internal|keepalive_timeout|large_client_header_buffers|limit_except|limit_rate|listen|location|msie_padding|msie_refresh|optimize_server_names|permanent|port_in_redirect|recursive_error_pages|rewrite|root|satisfy_any|send_timeout|sendfile|server|server_name|server_name_in_redirect|server_names_hash_max_size|server_names_hash_bucket_size|tcp_nodelay|tcp_nopush|types\s+)\b</string>
 			<key>name</key>
 			<string>keyword.language.directive.nginx.http</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(allow|deny)\b</string>
+			<string>(?&lt;=^|\s|;|{|})(allow|deny)\b</string>
 			<key>name</key>
 			<string>keyword.language.nginx.http.access</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(auth_basic|auth_basic_user_file)\b</string>
+			<string>(?&lt;=^|\s|;|{|})(auth_basic|auth_basic_user_file)\b</string>
 			<key>name</key>
 			<string>keyword.language.nginx.http.auth_basic</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(autoindex|autoindex_exact_size|autoindex_localtime)\b</string>
+			<string>(?&lt;=^|\s|;|{|})(autoindex|autoindex_exact_size|autoindex_localtime)\b</string>
 			<key>name</key>
 			<string>keyword.language.nginx.http.autoindex</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(ancient_browser|ancient_browser_value|modern_browser|modern_browser_value)\b</string>
+			<string>(?&lt;=^|\s|;|{|})(ancient_browser|ancient_browser_value|modern_browser|modern_browser_value)\b</string>
 			<key>name</key>
 			<string>keyword.language.nginx.http.browser</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(charset|charset_map|override_charset|source_charset)\b</string>
+			<string>(?&lt;=^|\s|;|{|})(charset|charset_map|override_charset|source_charset)\b</string>
 			<key>name</key>
 			<string>keyword.language.nginx.http.charset</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(empty_gif)\b</string>
+			<string>(?&lt;=^|\s|;|{|})(empty_gif)\b</string>
 			<key>name</key>
 			<string>keyword.language.nginx.http.empty_gif</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(fastcgi_index|fastcgi_hide_header|fastcgi_ignore_client_abort|fastcgi_intercept_errors|fastcgi_param|fastcgi_pass|fastcgi_pass_header|fastcgi_read_timeout|fastcgi_redirect_errors|fa|stcgi_storefastcgi_store_access|fastcgi_buffers|fastcgi_buffers_size|fastcgi_temp_path)\b</string>
+			<string>(?&lt;=^|\s|;|{|})(fastcgi_index|fastcgi_hide_header|fastcgi_ignore_client_abort|fastcgi_intercept_errors|fastcgi_param|fastcgi_pass|fastcgi_pass_header|fastcgi_read_timeout|fastcgi_redirect_errors|fa|stcgi_storefastcgi_store_access|fastcgi_buffers|fastcgi_buffers_size|fastcgi_temp_path)\b</string>
 			<key>name</key>
 			<string>keyword.language.nginx.http.fastcgi</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(geo)\b</string>
+			<string>(?&lt;=^|\s|;|{|})(geo)\b</string>
 			<key>name</key>
 			<string>keyword.language.nginx.http.geo</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(gzip|gzip_buffers|gzip_comp_level|gzip_disable|gzip_http.version|gzip_min_length|gzip_proxied|gzip_types|gzip_vary)\b</string>
+			<string>(?&lt;=^|\s|;|{|})(gzip|gzip_buffers|gzip_comp_level|gzip_disable|gzip_http.version|gzip_min_length|gzip_proxied|gzip_types|gzip_vary)\b</string>
 			<key>name</key>
 			<string>keyword.language.nginx.http.gzip</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(add_header|expires|server_tokens)\b</string>
+			<string>(?&lt;=^|\s|;|{|})(add_header|expires|server_tokens)\b</string>
 			<key>name</key>
 			<string>keyword.language.nginx.http.headers</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(valid_referers)\b</string>
+			<string>(?&lt;=^|\s|;|{|})(valid_referers)\b</string>
 			<key>name</key>
 			<string>keyword.language.nginx.http.referer</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(limit_zone|limit_conn)\b</string>
+			<string>(?&lt;=^|\s|;|{|})(limit_zone|limit_conn)\b</string>
 			<key>name</key>
 			<string>keyword.language.nginx.http.limit_zone</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(access_log|log_format)\b</string>
+			<string>(?&lt;=^|\s|;|{|})(access_log|log_format)\b</string>
 			<key>name</key>
 			<string>keyword.language.nginx.http.log</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(map|map_hash_max_size|map_hash_bucket_size)\b</string>
+			<string>(?&lt;=^|\s|;|{|})(map|map_hash_max_size|map_hash_bucket_size)\b</string>
 			<key>name</key>
 			<string>keyword.language.nginx.http.map</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(memcached_pass|memcached_connect_timeout|memcached_send_timeout|memcached_read_timeout|memcached_buffer_size|memcached_next_upstream)\b</string>
+			<string>(?&lt;=^|\s|;|{|})(memcached_pass|memcached_connect_timeout|memcached_send_timeout|memcached_read_timeout|memcached_buffer_size|memcached_next_upstream)\b</string>
 			<key>name</key>
 			<string>keyword.language.nginx.http.memcached</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(proxy_buffer_size|proxy_buffering|proxy_buffers|proxy_busy_buffers_size|proxy_connect_timeout|proxy_headers_hash_bucket_size|proxy_headers_hash_max_size|proxy_hide_header|proxy_ign|ore_client_abortproxy_intercept_errors|proxy_max_temp_file_size|proxy_method|proxy_next_upstream|proxy_pass|proxy_pass_header|proxy_pass_request_body|proxy_pass_request_headers|proxy_|redirectproxy_read_timeout|proxy_redirect|proxy_redirect_errors|proxy_send_lowat|proxy_send_timeout|proxy_set_body|proxy_set_header|proxy_store|proxy_store_access|proxy_temp_file_write_size|proxy_t|emp_pathproxy_upstream_fail_timeout|proxy_upstream_max_fails|proxy_cache_path|proxy_cache_bypass|proxy_intercept_errors|proxy_cache_valid|proxy_cache_lock|proxy_cache_lock_timeout|proxy_cache_use_stale|proxy_cache_min_uses|proxy_cache|proxy_temp_path)\b</string>
+			<string>(?&lt;=^|\s|;|{|})(proxy_buffer_size|proxy_buffering|proxy_buffers|proxy_busy_buffers_size|proxy_connect_timeout|proxy_headers_hash_bucket_size|proxy_headers_hash_max_size|proxy_hide_header|proxy_ign|ore_client_abortproxy_intercept_errors|proxy_max_temp_file_size|proxy_method|proxy_next_upstream|proxy_pass|proxy_pass_header|proxy_pass_request_body|proxy_pass_request_headers|proxy_|redirectproxy_read_timeout|proxy_redirect|proxy_redirect_errors|proxy_send_lowat|proxy_send_timeout|proxy_set_body|proxy_set_header|proxy_store|proxy_store_access|proxy_temp_file_write_size|proxy_t|emp_pathproxy_upstream_fail_timeout|proxy_upstream_max_fails|proxy_cache_path|proxy_cache_bypass|proxy_intercept_errors|proxy_cache_valid|proxy_cache_lock|proxy_cache_lock_timeout|proxy_cache_use_stale|proxy_cache_min_uses|proxy_cache|proxy_temp_path)\b</string>
 			<key>name</key>
 			<string>keyword.language.nginx.http.proxy</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(break|if|return|reqrite|set|uninitialized_variable_warn)\b</string>
+			<string>(?&lt;=^|\s|;|{|})(if|return|reqrite|set|uninitialized_variable_warn)\b</string>
 			<key>name</key>
 			<string>keyword.language.nginx.http.rewrite</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(ssi|ssi_silent_errors|ssi_types|ssi_value_length)\b</string>
+			<string>(?&lt;=^|\s|;|{|})(ssi|ssi_silent_errors|ssi_types|ssi_value_length)\b</string>
 			<key>name</key>
 			<string>keyword.language.nginx.http.ssi</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(ssl|ssl_certificate|ssl_certificate_key|ssl_ciphers|ssl_prefer_server_ciphers|ssl_protocols|ssl_session_cache)\b</string>
+			<string>(?&lt;=^|\s|;|{|})(ssl|ssl_certificate|ssl_certificate_key|ssl_ciphers|ssl_prefer_server_ciphers|ssl_protocols|ssl_session_cache)\b</string>
 			<key>name</key>
 			<string>keyword.language.nginx.http.ssl</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(ip_hash|upstream|server)\b</string>
+			<string>(?&lt;=^|\s|;|{|})(ip_hash|upstream|server)\b</string>
 			<key>name</key>
 			<string>keyword.language.nginx.http.upstream</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(userid|userid_domain|userid_expires|userid_name|userid_p3p|userid_path|userid_service)\b</string>
+			<string>(?&lt;=^|\s|;|{|})(userid|userid_domain|userid_expires|userid_name|userid_p3p|userid_path|userid_service)\b</string>
 			<key>name</key>
 			<string>keyword.language.nginx.http.userid</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(levels|keys_zone|inactive|max_size)\b</string>
+			<string>(?&lt;=^|\s|;|{|})(levels|keys_zone|inactive|max_size)\b</string>
 			<key>name</key>
 			<string>support.function.language.nginx</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(any|notice|msie6|updating|error|timeout|invalid_header|http_500|http_502|http_503|http_504|break)\b</string>
+			<string>(?&lt;=^|\s|;|{|})(any|notice|msie6|updating|error|timeout|invalid_header|http_500|http_502|http_503|http_504|break)\b</string>
 			<key>name</key>
 			<string>support.constant.language.nginx</string>
 		</dict>
