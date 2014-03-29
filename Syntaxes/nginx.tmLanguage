@@ -252,6 +252,12 @@
 			<key>name</key>
 			<string>support.function.language.nginx</string>
 		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(any|notice|msie6|updating|error|timeout|invalid_header|http_500|http_502|http_503|http_504|break)\b</string>
+			<key>name</key>
+			<string>support.constant.language.nginx</string>
+		</dict>
 	</array>
 	<key>scopeName</key>
 	<string>source.nginx</string>
